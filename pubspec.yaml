@@ -1,0 +1,30 @@
+name: nutrismart
+description: "NutriSmart: log meals, understand their nutrition and get personalised advice."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Calls to the USDA and Open Food Facts web APIs
+  http: ^1.2.2
+  # Saves the profile and food log on the phone
+  shared_preferences: ^2.3.2
+  # Camera barcode scanner
+  mobile_scanner: ^7.0.0
+  # Daily reminder notifications
+  flutter_local_notifications: ^19.0.0
+  timezone: ^0.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
